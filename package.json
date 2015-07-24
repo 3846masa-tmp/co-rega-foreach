@@ -1,6 +1,6 @@
 {
   "name": "co-rega-foreach",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Run generator function as Array.prototype.forEach callback.",
   "main": "index.js",
   "dependencies": {
