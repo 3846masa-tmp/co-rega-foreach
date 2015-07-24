@@ -20,7 +20,7 @@ co(function*() {
   // If callback is generator func, run with co-foreach.
   yield [1, 2, 3].forEach(function*(num) {
     console.log('Number is %d.', num);
-    var res = request.get('http://example.com/#' + num);
+    var res = yield request.get('http://example.com/#' + num);
     console.log('StatusCode : %d', res.statusCode);
   });
   process.exit();
