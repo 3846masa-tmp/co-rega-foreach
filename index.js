@@ -27,7 +27,7 @@ var __coForEach = co.wrap(function*( callback, thisArg ) {
   }
 });
 
-var enabledCoForEach = function(Array) {
+var enableCoForEach = function(Array) {
   if (Array.prototype.forEach !== __forEach) return;
   Array.prototype.forEach = function(fn) {
     if (isGeneratorFn(fn)) {
@@ -38,14 +38,18 @@ var enabledCoForEach = function(Array) {
   };
 };
 
-var disabledCoForEach = function(Array) {
+var disableCoForEach = function(Array) {
   if (Array.prototype.forEach !== __forEach) {
     Array.prototype.forEach = __forEach;
   }
 };
 
 module.exports = {
-  disabled : disabledCoForEach,
-  enabled : enabledCoForEach
+  disabled : function() {
+    disableCoForEach(Array);
+  },
+  enabled : function() {
+    enableCoForEach(Array);
+  }
 };
-enabledCoForEach(Array);
+enableCoForEach(Array);
