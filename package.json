@@ -1,5 +1,5 @@
 {
-  "name": "co-foreach",
+  "name": "co-rega-foreach",
   "version": "0.0.1",
   "description": "Run generator function as Array.prototype.forEach callback.",
   "main": "index.js",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/3846masa/co-foreach/issues"
   },
-  "homepage": "https://github.com/3846masa/co-foreach#readme"
+  "homepage": "https://github.com/3846masa/co-foreach#readme",
+  "keywords": [
+    "co",
+    "foreach",
+    "forEach",
+    "generator"
+  ]
 }

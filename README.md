@@ -1,4 +1,4 @@
-# co-foreach
+# co-rega-foreach
 Run generator function as Array.prototype.forEach callback.
 
 ## Usage
@@ -41,3 +41,7 @@ co_foreach.disabled();
 // co-foreach is enabled.
 co_foreach.enabled();
 ```
+
+## LICENSE
+
+The MIT License (MIT)
