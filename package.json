@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3846masa/co-foreach.git"
+    "url": "git+https://github.com/3846masa/co-rega-foreach.git"
   },
   "author": "3846masa",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/3846masa/co-foreach/issues"
+    "url": "https://github.com/3846masa/co-rega-foreach/issues"
   },
-  "homepage": "https://github.com/3846masa/co-foreach#readme",
+  "homepage": "https://github.com/3846masa/co-rega-foreach#readme",
   "keywords": [
     "co",
     "foreach",

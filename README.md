@@ -7,7 +7,7 @@ Run generator function as Array.prototype.forEach callback.
 ```js
 'use strict';
 var co = require('co');
-var co_foreach = require('co-foreach');
+var co_foreach = require('co-rega-foreach');
 
 // If callback is normal func, run with original forEach.
 [1, 2, 3].forEach(function(num) {
@@ -17,7 +17,7 @@ var co_foreach = require('co-foreach');
 co(function*() {
   var request = require('co-request');
 
-  // If callback is generator func, run with co-foreach.
+  // If callback is generator func, run with co-rega-foreach.
   yield [1, 2, 3].forEach(function*(num) {
     console.log('Number is %d.', num);
     var res = yield request.get('http://example.com/#' + num);
@@ -27,18 +27,18 @@ co(function*() {
 });
 ```
 
-### Switch between original and co-foreach
+### Switch between original and co-rega-foreach
 ```js
 'use strict';
 var co = require('co');
 
-// co-foreach is enabled.
-var co_foreach = require('co-foreach');
+// co-rega-foreach is enabled.
+var co_foreach = require('co-rega-foreach');
 
-// co-foreach is disabled.
+// co-rega-foreach is disabled.
 co_foreach.disabled();
 
-// co-foreach is enabled.
+// co-rega-foreach is enabled.
 co_foreach.enabled();
 ```
 
