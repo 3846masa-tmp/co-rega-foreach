@@ -1,4 +1,6 @@
 # co-rega-foreach
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/3846masa/co-rega-foreach.svg)](https://greenkeeper.io/)
 Run generator function as Array.prototype.forEach callback.
 
 ## Usage
